@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+
+# Redirect index.php to the root
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php [NC]
+RewriteRule ^index\.php(.*)$ /$1 [R=301,L]
+
+# Allow any other files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+</IfModule>
