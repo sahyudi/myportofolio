@@ -53,7 +53,7 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-        <img src="<?= base_url() ?>assets/img/sandhika.jpg" alt="Muhamad Sahyudi" width="200" class="rounded-circle img-thumbnail" />
+        <img src="<?= base_url() ?>assets/img/sahyudi.jpg" alt="Muhamad Sahyudi" width="200" class="rounded-circle img-thumbnail" />
         <h1 class="display-4">Muhamad Sahyudi</h1>
         <p class="lead">Student | Programmer</p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
